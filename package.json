@@ -2,12 +2,13 @@
   "name": "note-taking",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://gitname.github.io/note-taking",
+  "homepage": "https://keandev/note-taking.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "deploy": "gh-pages -d build",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

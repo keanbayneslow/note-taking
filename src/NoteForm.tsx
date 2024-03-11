@@ -74,10 +74,11 @@ export function NoteForm({ onSubmit, onAddTag, availableTags }: NoteFormProps) {
           <Button type="submit" variant="outline-primary">
             Save
           </Button>
-          <Link to=".." />
+          <Link to=".." >
           <Button type="button" variant="outline-secondary">
             Cancel
           </Button>
+          </Link>
         </Stack>
       </Stack>
     </Form>
